@@ -1,0 +1,521 @@
+@charset "UTF-8";
+
+@import "../base/_color.scss";
+@import "../base/_mediaquery.scss";
+@import "../base/_variables.scss";
+// ===========================================================
+// 01_字型 font-family
+// 02_字級 font-size
+// 03_行距 line-height
+// 04_文字顏色color
+// 05_對齊 text-align
+// 06_字重 font-weight
+// ==========================================================
+
+
+// ==========================================================
+// 01_字型 font-size
+// ==========================================================
+	body > *{
+		font-family: '微軟正黑體';
+	}
+
+
+
+// ==========================================================
+// 02_字級 font-size
+// ==========================================================
+	// 575以內
+		.kv-detail,
+		.dbs-btn-detail,
+		.footer-link a,
+		.copyright,
+		.feature-item-note,
+		.fs-14{
+			font-size: $mobile_14px;
+		}
+
+		.kv-10anniversary-title p,
+		.readmore a,
+		.social-title,
+		.overview-list li,
+		.overview-detail,
+		.fs-16{
+			font-size: $mobile_16px;
+		}
+
+		.step-video-title,
+		.qualification-title,
+		.qa-item dt,
+		.qa-item dd,
+		.fs-18{
+			font-size: $mobile_18px;
+		}
+		.kv-title h1,
+		.nav-link,
+		.dbs-btn-title,
+		.sidebar-item,
+		.kv-title-text,
+        .special-promote,
+		.fs-20{
+			font-size: $mobile_20px;
+		}
+
+		.qa-box-title,
+		.fs-22{
+			font-size: $mobile_22px;
+		}
+
+		.kv-title-promote p,
+		.feature-item-title h3,
+		.step-item-title p,
+		.fs-24{
+			font-size: $mobile_24px;
+		}
+
+		.overview h2,
+		.special h2 span:nth-child(2),
+		.fs-28{
+			font-size: $mobile_28px;
+		}
+
+		.kv-title h2,
+		.feature-item-title span,
+		.fs-30{
+			font-size: $mobile_30px;
+		}
+
+		.feature h2,
+		.step h2,
+		.qualification h2,
+		.qa h2,
+		.special h2,
+		.fs-32{
+			font-size: $mobile_32px;
+		}
+		.fs-33{
+			font-size: $mobile_33px;
+		}
+		.kv-title-promote span,
+		.fs-35{
+			font-size: $mobile_35px;
+		}
+
+		.fs-36{
+			font-size: $mobile_36px;
+		}
+		.feature-item-title p,
+		.fs-45{
+			font-size: $mobile_45px;
+		}
+
+
+	// 769以上
+	@include md{
+		.footer-link a,
+		.copyright,
+		.fs-14{
+			font-size: $desktop_14px;
+		}
+		.kv-detail,
+		.dbs-btn-detail,
+		.readmore a,
+		.social-title,
+		.overview-list li,
+		.overview-detail,
+		.feature-item-note,
+		.fs-16{
+			font-size: $desktop_16px;
+		}
+		.step-video-title,
+		.nav-link,
+		.fs-20{
+			font-size: $desktop_20px;
+		}
+		.kv-10anniversary-title p,
+		.sidebar-item,
+		.fs-24{
+			font-size: $desktop_24px;
+		}
+		.dbs-btn-title,
+		.fs-25{
+			font-size: $desktop_25px;
+		}
+		.step-item-title p,
+		.qualification-title,
+		.qa-item dt,
+		.qa-item dd,
+		.fs-26{
+			font-size: $desktop_26px;
+		}
+		.kv-title h1,
+		.kv-title-text,
+		.fs-28{
+			font-size: $desktop_28px;
+		}
+		.feature-item-title h3,
+		.feature-item-title span,
+        .special-promote,
+		.fs-30{
+			font-size: $desktop_30px;
+		}
+		.kv-title-promote p,
+		.qa-box-title,
+		.fs-34{
+			font-size: $desktop_34px;
+		}
+		.fs-40{
+			font-size: $desktop_40px;
+		}
+		.kv-title h2,
+        .fs-46{
+            font-size: $desktop_46px;
+        }
+		.feature h2,
+		.step h2,
+		.qualification h2,
+		.qa h2,
+		.overview h2,
+		.special h2,
+		.special h2 span:nth-child(2),
+		.feature-item-title p,
+		.fs-50{
+			font-size: $desktop_50px;
+		}
+		.fs-52{
+			font-size: $desktop_52px;
+		}
+		.kv-title-promote span,
+		.fs-64{
+			font-size: $desktop_64px;
+		}
+	}
+
+    // 1400以上
+    @include lg{
+		.footer-link a,
+		.copyright,
+		.fs-14{
+			font-size: 14px;
+		}
+		.kv-detail,
+		.dbs-btn-detail,
+		.readmore a,
+		.social-title,
+		.overview-list li,
+		.overview-detail,
+		.feature-item-note,
+		.fs-16{
+			font-size: 16px;
+		}
+		.step-video-title,
+		.nav-link,
+		.fs-20{
+			font-size: 20px;
+		}
+		.kv-10anniversary-title p,
+		.sidebar-item,
+		.fs-24{
+			font-size: 24px;
+		}
+		.dbs-btn-title,
+		.fs-25{
+			font-size: 25px;
+		}
+		.step-item-title p,
+		.qualification-title,
+		.qa-item dt,
+		.qa-item dd,
+		.fs-26{
+			font-size: 26px;
+		}
+		.kv-title h1,
+		.kv-title-text,
+		.fs-28{
+			font-size: 28px;
+		}
+		.feature-item-title h3,
+		.feature-item-title span,
+        .special-promote,
+		.fs-30{
+			font-size: 30px;
+		}
+		.kv-title-promote p,
+		.qa-box-title,
+		.fs-34{
+			font-size: 34px;
+		}
+		.fs-40{
+			font-size: 40px;
+		}
+		.kv-title h2,
+        .fs-46{
+            font-size: 46px;
+        }
+		.feature h2,
+		.step h2,
+		.qualification h2,
+		.qa h2,
+		.overview h2,
+		.special h2,
+		.special h2 span:nth-child(2),
+		.feature-item-title p,
+		.fs-50{
+			font-size: 50px;
+		}
+		.fs-52{
+			font-size: 52px;
+		}
+		.kv-title-promote span,
+		.fs-64{
+			font-size: 64px;
+		}
+    }
+
+
+
+// ==========================================================
+// 03_行距 line-height
+// ==========================================================
+	// 575以內
+	.dbs-btn-title {
+		line-height: 0;
+	}
+
+	.kv-title h2{
+		line-height: 1.25;
+	}
+	.kv-10anniversary-title p,
+	.special-promote{
+		line-height: 1.6;
+	}
+	.overview-list li{
+		line-height: 1.7;
+	}
+	.overview-detail,
+	.qualification-title{
+		line-height: 2;
+	}
+	.kv-title-promote p{
+		line-height: $mobile_35px;
+	}
+	// 576以上
+	@include md{
+		.kv-10anniversary-title p,
+		.kv-title-promote p{
+			line-height: 1;
+		}
+
+		.sidebar-item{
+			line-height: 1.1;
+		}
+		.qualification-title{
+			line-height: 1.3;
+		}
+
+        .special-promote{
+        	line-height: 1.7;
+        }
+	}
+
+
+	// 1440以上
+	@include lg{
+	    
+	}
+
+
+
+// ==========================================================
+// 04_文字顏色color
+// ==========================================================
+
+	.social-title,
+	.nav-link,
+	.footer-link,
+	.footer-link a,
+	.copyright,
+	.sidebar-item,
+	.qa-box-title,
+	.dbs-btn .dbs-btn-title{
+		color: $color_white_FFF;  // 白
+	}
+
+	.kv-title h1,
+	.kv-title h2,
+	.kv-10anniversary-title p,
+	.kv-title-promote p, 
+	.kv-title-promote span,
+	.kv-detail,
+	.feature h2,
+	.step h2,
+	.qualification h2,
+	.qa h2,
+	.overview h2,
+	.special h2,
+	.feature-item-title h3,
+	.feature-item-note,
+	.dbs-btn-detail,
+	.step-item-title p,
+	.step-video-title,
+	.qualification-title,
+	.happygo .special-promote{
+		color: $color_blue_273043;  // 深深藍紫
+	}
+
+
+	.overview-list a{
+		color: $color_blue_5C5B86;  // 深藍紫
+	}
+	.overview-list li,
+	.overview-detail{
+		color: $color_coffee_473E3B;  // 深深咖啡色
+	}
+
+
+
+	// 各平台使用的主要色
+	.fetnet .readmore a,
+	.fetnet .kv-title-promote span,
+	.fetnet .feature-item-title p,
+	.fetnet .feature-item-title span,
+	.fetnet .qa-item .qa-mark,
+	.fetnet .qa-item dd a span,
+    .fetnet .qa-item dt::before,  
+    .fetnet .qa-item dd::before,
+    .fetnet .readmore a{
+		color: $color_orange_FF604A_fetnet; // 遠傳橘
+	}
+
+	.taiwanmobile .readmore a,
+	.taiwanmobile .kv-title-promote span,
+	.taiwanmobile .feature-item-title p,
+	.taiwanmobile .feature-item-title span,
+	.taiwanmobile .qa-item .qa-mark,
+	.taiwanmobile .qa-item dd a span,
+    .taiwanmobile .qa-item dt::before,  
+    .taiwanmobile .qa-item dd::before,
+    .taiwanmobile .readmore a{
+		color: $color_orange_FF5F1F_taiwanmobile; // 台灣大哥大taiwanmobile
+	}
+
+	.happygo .special-text.text span:last-child,
+	.happygo .readmore a,
+	.happygo .kv-title-promote span,
+	.happygo .kv-title-text span:nth-child(3),
+	.happygo .feature-item-title p,
+	.happygo .feature-item-title span,
+	.happygo .qa-item .qa-mark,
+	.happygo .qa-item dd a span,
+    .happygo .qa-item dt::before,  
+    .happygo .qa-item dd::before,
+    .happygo .readmore a{
+		color: $color_orange_DE1B2B_happygo; // HAPPYGO_happygo
+	}
+
+	.roo .readmore a,
+	.roo .kv-title-promote span,
+	.roo .feature-item-title p,
+	.roo .feature-item-title span,
+	.roo .qa-item .qa-mark,
+	.roo .qa-item dd a span,
+    .roo .qa-item dt::before,  
+    .roo .qa-item dd::before,
+    .roo .readmore a{
+		color: $color_orange_CC3C14_roo; // 貸鼠先生roo
+	}
+
+	.money101 .readmore a,
+	.money101 .kv-title-promote span,
+	.money101 .feature-item-title p,
+	.money101 .feature-item-title span,
+	.money101 .qa-item .qa-mark,
+	.money101 .qa-item dd a span,
+    .money101 .qa-item dt::before,  
+    .money101 .qa-item dd::before,
+    .money101 .readmore a{
+		color: $color_orange_FF8640_money101; // Money101
+	}
+
+	.alphaloan .readmore a,
+	.alphaloan .kv-title-promote span,
+	.alphaloan .feature-item-title p,
+	.alphaloan .feature-item-title span,
+	.alphaloan .qa-item .qa-mark,
+	.alphaloan .qa-item dd a span,
+    .alphaloan .qa-item dt::before,  
+    .alphaloan .qa-item dd::before,
+    .alphaloan .readmore a{
+		color: $color_orange_FF8640_alphaloan; // 實貸比較網alphaloan
+	}
+
+	.alphaloan .qa-box-title{
+		color: $color_blue_273043;  // 實貸比較網alphaloan  深深藍紫 
+	}
+
+
+
+
+// ==========================================================
+// 05_對齊 text-align
+// ==========================================================
+	.sidebar-item,
+	.kv-text-group,
+	.kv-10anniversary,
+	.feature,
+	.step,
+	.qualification,
+	.qa,
+	.special,
+	.tx-align-center,
+	.overview{
+		text-align: center;
+	}
+	.qa-item dt,
+	.qa-item dd,
+	.overview-list,
+	.overview-detail,
+	.feature-item-title,
+	.qualification-box,
+	.tx-align-left{
+		text-align: left;
+	}
+	.qualification-title{
+		text-align: justify;
+	}
+
+	.tx-align-left{
+		text-align: right;
+	}
+
+
+
+// ==========================================================
+// 06_字重 font-weight
+// ==========================================================
+	body,
+	.dbs-btn{
+		font-weight: normal;
+	}
+	.readmore a,
+	.sidebar-item,
+	.kv-title h1,
+	.kv-title h2,
+	.kv-10anniversary-title p,
+	.kv-title-promote p, 
+	.kv-title-promote span,
+	.kv-title-text,
+	.kv-detail,
+	.feature-item-title h3,
+	.feature-item-title p,
+	.feature-item-title span,
+	.step-item-title p,
+	.step-video-title,
+	.qualification-title,
+	.qa-title,
+	.overview-detail,
+	.happygo .special-text{
+		font-weight: bold;
+	}
+
+

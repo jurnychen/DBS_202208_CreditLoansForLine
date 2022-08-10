@@ -1,0 +1,64 @@
+1.Please add below codes between <header></header> in index.html
+
+<script type="text/javascript" src="//assets.adobedtm.com/launch-EN8553f9764c1a4bcb90664059cdcb87e6.min.js"></script>
+
+<meta name='page.pageType' content='section home' />
+<meta name='page.site' content='pweb' />
+<meta name='page.primaryCat' content='dbs' />
+<meta name='page.language' content='zh' />
+<meta name='page.country' content='tw' />
+<meta name='page.brand' content='dbs' />
+
+
+
+2.Please add below codes at the end of page just before the tag </body> in index.html
+
+<script src="https://www.dbs.com.tw/iwov-resources/flp/scripts/aa-digitalData.js" type="text/javascript" language="JavaScript"></script>
+<script src="https://www.dbs.com.tw/iwov-resources/flp/js/vendor/aa-site-catalyst.js" type="text/javascript" language="JavaScript"></script>
+<script type="text/javascript">_satellite.pageBottom();</script>
+
+  <!-- OMNITURE START --> 
+  <!-- SiteCatalyst code version: H.13.
+  Copyright 1997-2007 Omniture, Inc. More info available at
+  http://www.omniture.com --> 
+  <script src="/iwov-resources/js/s_code.js"  language="JavaScript"></script> 
+  <script language="JavaScript"> 
+  <!--
+  /* You may give each page an identifying name, server, and channel on
+  the next lines. */
+  s.pageName=""
+  s.server=""
+  s.channel=""
+  s.pageType=""
+  s.prop1=""
+  s.prop2=""
+  s.prop3=""
+  s.prop4=""
+  s.prop5=""
+  /* Conversion Variables */
+  s.campaign=""
+  s.state=""
+  s.zip=""
+  s.events="event1"
+  s.products=""
+  s.purchaseID=""
+  s.eVar1=""
+  s.eVar2=""
+  s.eVar3=""
+  s.eVar4=""
+  s.eVar5=""
+  s.eVar8=""
+  /* Hierarchy Variables */
+  s.hier1=""
+  /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+  var s_code=s.t();if(s_code)document.write(s_code)//-->
+  </script> 
+  <script language="JavaScript"> 
+  <!--
+  if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+  //-->
+  </script>
+  <noscript>
+  <a href="http://www.omniture.com" title="Web Analytics"><img src="http://dbs.112.2o7.net/b/ss/dbswebsitedev/1/H.13--NS/0" height="1" width="1" border="0" alt="" /></a>
+  </noscript>
+  <!-- OMNITURE END -->

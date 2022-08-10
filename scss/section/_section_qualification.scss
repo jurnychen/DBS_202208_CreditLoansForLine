@@ -1,0 +1,122 @@
+// 遠傳fetnet
+// 台灣大哥大taiwanmobile
+// HAPPYGO_happygo
+// 貸鼠先生roo
+// Money101
+// 實貸比較網alphaloan
+
+
+
+// ==========================================================
+// S4:申辦資格qualification
+// ==========================================================
+    .qualification{
+        padding: $mobile_40px 0 $mobile_200px;
+        background: $color_gray_F2F1F1;
+        @include md{
+            padding: $desktop_100px 0 $desktop_80px;
+        }
+        @include lg{
+            padding: 100px 0 80px;
+        }
+        .container{
+            position: relative;
+        }
+        h2{
+            margin-bottom: $mobile_10px;
+            @include md{
+                margin-bottom: $desktop_40px;
+            }
+            @include lg{
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .qualification-cloud{
+        visibility: hidden;
+        width: 0;
+        @include md{
+            visibility: visible;
+            width: 22.2222222222%;
+            position: absolute;
+        }
+        &.left{
+            top: 1%;
+            left: -1%;
+        }
+        &.right{
+            top: 30%;
+            right: 5%;
+        }
+    }
+
+
+    .qualification-wrap{
+        position: relative;
+    }
+    .qualification-image{
+        @include md{
+            width: 43.75%;
+        }
+    }
+
+    // 文字區
+    .qualification-box{
+        background-color: $color_white_FFF;
+        position: absolute;
+        width: 88.2352941176%;
+        bottom: 0;
+        right: 0;
+        padding: $mobile_20px;
+        border: $mobile_3px solid $color_blue_273043;
+        border-radius: 20px;
+        transform: translateY(62%);
+        @include md{
+            width: 55.5555555556%;
+            top: 50%;
+            bottom: auto;
+            right: 6%;
+            padding: $desktop_40px;
+            border: $desktop_3px solid $color_blue_273043;
+            transform: translateY(-50%);
+        }
+        @include lg{
+            width: 55.5555555556%;
+            top: 50%;
+            bottom: auto;
+            right: 6%;
+            padding: 40px;
+            border: 3px solid $color_blue_273043;
+            transform: translateY(-50%);
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 2em;
+            background-color: $color_white_FFF;
+            left: -4px;
+            bottom: 2em;
+        }
+        .apply{
+            margin-left: 0;
+        }
+    }
+
+    .qualification-title{
+        padding: $mobile_15px 0;
+        @include md{
+            padding: 0 0 $desktop_15px 0;
+        }
+        @include lg{
+            padding: 0 0 15px 0;
+        }
+    }
+
+
+
+
+
+
+

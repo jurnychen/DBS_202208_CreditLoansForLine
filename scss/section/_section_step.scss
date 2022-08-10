@@ -1,0 +1,185 @@
+// 遠傳fetnet
+// 台灣大哥大taiwanmobile
+// HAPPYGO_happygo
+// 貸鼠先生roo
+// Money101
+// 實貸比較網alphaloan
+
+
+
+
+// ==========================================================
+// S3:線上申請四步驟step
+// ==========================================================
+    .step{
+        padding: $mobile_40px 0 $mobile_80px;
+        background: url('../images/obj_cloude_gray.png') no-repeat left bottom /  90% auto,
+                    $color_coffee_EBDECE;
+        @include md{
+            padding: $desktop_80px 0 $desktop_80px;
+            background: url('../images/obj_cloude_gray.png') no-repeat left bottom -1px /  40% auto,
+                        $color_coffee_EBDECE;
+        }
+        @include lg{
+            padding: 80px 0 80px;
+            background: url('../images/obj_cloude_gray.png') no-repeat left bottom -1px /  560px auto,
+                        $color_coffee_EBDECE;
+        }
+        h2{
+            margin-bottom: $mobile_10px;
+            @include md{
+                margin-bottom: $desktop_10px;
+            }
+            @include lg{
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .step-wrap{
+        @include md{
+            display: flex;
+        }
+    }
+
+    // 步驟說明區
+    .step-list{
+        @include md{
+            // 420px
+            flex: 0 0 33.333333%;
+        }
+        li{
+            // 380px
+            width: 90.476190476%;
+            height: 0;
+            padding-bottom: 21.3333333333%;
+            margin: 0 auto;
+            position: relative;
+            background: url(../images/step_item_bg-xs.png) no-repeat right center / contain;
+        }
+    }
+    .step-item-image{
+        position: absolute;
+        // 100px
+        width: 26.315789474%;
+        height: 0;
+        padding-bottom: 26.315789474%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+    .step-item-title{
+        position: absolute;
+        top: 50%;
+        left: 26.3157894737%;
+        transform: translateY(-50%);
+    }
+
+    // 影片區
+    .step-video-wrap{
+        width: 100%;
+        @include md{
+            // 840px
+            flex: 0 0 66.666667%;
+            position: relative;
+        }
+    }
+    .step-video{
+        // 340px x 209px
+        width: 100%;
+        height: 0;
+        padding-bottom: 61.470588235%;
+        margin: 0 auto;
+        position: relative;
+        @include md{
+            // 700px x 430px
+            width: 83.333333333%;
+            padding-bottom: 51.1904762%;
+            margin: 0 auto 0 0;
+        }
+    }
+    // 影片區：背景(各平台使用的主要色)
+        // 遠傳版
+        .fetnet .step-video{
+            background: url(../images_fetnet/step_video_bg_fetnet.png) no-repeat center center / 100% auto;
+        }
+        // 台灣大哥大taiwanmobile 
+        .taiwanmobile .step-video{
+            background: url(../images_taiwanmobile/step_video_bg_taiwanmobile.png) no-repeat center center / 100% auto;
+        }
+        // HAPPYGO_happygo 
+        .happygo .step-video{
+            background: url(../images_happygo/step_video_bg_happygo.png) no-repeat center center / 100% auto;
+        }
+        // 貸鼠先生roo
+        .roo .step-video{
+            background: url(../images_roo/step_video_bg_roo.png) no-repeat center center / 100% auto;
+        }
+        // Money101 
+        .money101 .step-video{
+            background: url(../images_money101/step_video_bg_money101.png) no-repeat center center / 100% auto;
+        }
+        // 實貸比較網alphaloan 
+        .alphaloan .step-video{
+            background: url(../images_alphaloan/step_video_bg_alphaloan.png) no-repeat center center / 100% auto;
+        }
+
+    // 影片區:YT顯示區
+    .step-video-iframe{
+        // 310px x 174px
+        width: 91.428571429%;
+        height: 83.720930233%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 2.5%;
+        margin: auto;
+        @include md{
+            // 640px x 360px
+            width: 91.428571429%;
+            height: 83.720930233%;
+            bottom: 2.5%;
+            margin: auto;
+        }
+    }
+    .step-video-title{
+        width: 100%;
+        margin: 0 0 $mobile_20px 0;
+        @include md{
+            width: 83.333333333%;
+            margin: 0 0 $desktop_20px 0;
+        }
+        @include lg{
+            margin: 0 0 20px 0;
+        }
+    }
+    .step-image{
+        visibility: hidden;
+        width: 0;
+        @include md{
+            visibility: visible;
+            // 140px x 430px
+            width: 16.666666667%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    // 按紐區
+    .step .apply{
+        margin-top: $mobile_20px;
+        @include md{
+            margin-top: $desktop_10px;
+        }
+        @include lg{
+            margin-top: 10px;
+        }
+    }
+
+
+
+
+

@@ -1,0 +1,60 @@
+.footer{
+    background: $color_black_000;
+    padding-bottom: $mobile_26px;
+    @include md{
+        padding: $desktop_10px 0;
+    }
+    @include lg{
+        padding: 10px 0;
+    }
+
+    .container{
+        @include md{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+}
+
+// 社群區
+    .social-bar{
+        display: flex;
+        justify-content: center;
+        padding: $mobile_20px 0;
+        margin-bottom: $mobile_35px;
+        @include md{
+            order: 1;
+            padding: 0;
+            margin-bottom: 0;
+        }
+    }
+    .social-item{
+        flex: 0 0 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &:hover{
+            .social-image{
+                opacity:1;
+            }
+        }
+    }
+
+
+
+    .social-image{
+        opacity:0.6;
+        transition: .5s;
+        flex: 0 0 30px;
+        @include md{
+            flex: 0 0 30px;
+        }
+    }
+    .social-title{
+        padding-left: $mobile_2px;
+        padding-top: $mobile_5px;
+        padding-bottom: $mobile_5px;
+    }

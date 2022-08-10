@@ -1,0 +1,94 @@
+// 遠傳fetnet
+// 台灣大哥大taiwanmobile
+// HAPPYGO_happygo
+// 貸鼠先生roo
+// Money101
+// 實貸比較網alphaloan
+
+
+
+
+// ==========================================================
+// S7:通路專屬優惠special
+// ==========================================================
+    .special{
+        padding: $mobile_40px 0 $mobile_60px;
+        background: url('../images/obj_cloude_gray.png') no-repeat left bottom  -1px/  80% auto,
+                    #F4DDAB;
+        @include md{
+            padding: $desktop_60px 0 $desktop_80px;
+            background: url('../images/obj_cloude_gray.png') no-repeat left bottom -1px /  40% auto,
+                        #F4DDAB;
+        }
+        @include lg{
+            padding: 60px 0 80px;
+            background: url('../images/obj_cloude_gray.png') no-repeat left bottom -1px /  560px auto,
+                        #F4DDAB;
+        }
+        .container{
+            // outline: 1px solid #0ff;
+            position: relative;
+            @include md{
+                padding: 0 $desktop_110px;
+            }
+            @include lg{
+                padding: 0 110px;
+            }
+        }
+        .h2-mark{
+            span{
+                display: block;
+            }
+        }
+        .h2-mark::before,
+        .h2-mark::after{
+            // background: url('../images/title_decoration_white.png') no-repeat left top / 100%;
+        }
+
+    }
+
+    .special-promote{
+        position: relative;
+        padding: $mobile_10px 0;
+        @include md{
+            width: 80%;
+            margin: 0 auto;
+            padding: $desktop_10px 0;
+            &::before,
+            &::after{
+                // outline: 1px solid #f00;
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-40%);
+                width: 18%;
+                height: 0;
+                padding-bottom: 40%;
+            }
+            &::before{
+                left: -18%;
+                background: url('../images_happygo/special_bg_obj_money_happygo.png') no-repeat center / 100%;
+            }
+            &::after{
+                right: -18%;
+                background: url('../images_happygo/special_bg_obj_man_happygo.png') no-repeat center / 100%;
+            }
+        }
+        @include lg{
+            padding: 10px 0;
+            &::before,
+            &::after{
+                transform: translateY(-25%);
+            }
+
+        }
+        span:nth-child(1){
+            display: block;
+        }
+
+    }
+    .special-text{}
+
+
+

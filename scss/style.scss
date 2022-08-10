@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@import "base/_color.scss";
+@import "base/_mediaquery.scss";
+@import "base/_variables.scss";
+
+@import "base/_lite-yt-embed.scss";
+@import "base/_font.scss";
+
+@import "section/_common.scss";
+@import "section/_nav.scss";
+@import "section/_footer.scss";
+
+
+
+// ==========================================================
+// S1:KV主視覺
+// S2:產品特色feature
+// S3:線上申請四步驟step
+// S4:申辦資格qualification
+// S5:問答集qa
+// S6:專案介紹overview
+// S7:通路專屬優惠special
+// ==========================================================
+
+@import "section/_section_kv.scss";
+@import "section/_section_special.scss";
+@import "section/_section_feature.scss";
+@import "section/_section_step.scss";
+@import "section/_section_qualification.scss";
+@import "section/_section_qa.scss";
+@import "section/_section_overview.scss";

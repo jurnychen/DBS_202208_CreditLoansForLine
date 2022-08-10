@@ -1,0 +1,98 @@
+// 遠傳fetnet
+// 台灣大哥大taiwanmobile
+// HAPPYGO_happygo
+// 貸鼠先生roo
+// Money101
+// 實貸比較網alphaloan
+
+
+
+
+// ==========================================================
+// S6:專案介紹overview
+// ==========================================================
+    .overview{
+        padding: $mobile_40px 0 $mobile_60px;
+        background: $color_gray_F2F1F1;
+        @include md{
+            padding: $desktop_40px 0 $desktop_60px;
+        }
+        @include lg{
+            padding: 40px 0 60px;
+        }
+        .container{
+            padding: 0 $mobile_27px;
+            @include md{
+                padding: 0 $desktop_27px;
+            }
+            @include lg{
+                padding: 0 27px;
+            }
+        }
+    }
+    .overview h2{
+        margin-bottom: $mobile_10px;
+        @include md{
+            margin-bottom: $desktop_10px;
+        }
+        @include lg{
+            margin-bottom: 10px;
+        }
+    }
+    .happygo .overview h2{
+        span{
+            display: block;
+        }
+        @include md{
+            span{
+                display: inline-block;
+            }
+        }
+        @include lg{
+            
+        }
+    }
+    .overview-list{
+        padding: 0 $mobile_10px;
+        @include md{
+            padding: 0 $desktop_10px;
+        }
+        @include lg{
+            padding: 0 10px;
+        }
+
+        a{
+            text-decoration-line: underline;
+        }
+    }
+
+    .overview h2:nth-of-type(2){
+
+        padding-top: $mobile_70px;
+        @include md{
+            padding-top: $desktop_50px;
+        }
+        @include lg{
+            padding-top: 50px;
+        }
+    }
+    .overview-list li{
+        list-style: decimal;
+        margin-left: 2em;
+    }
+    .overview-list .hidetxt{
+        display: none;
+    }
+    .overview-detail{
+        margin-top: $mobile_20px;
+        @include md{
+            margin-top: $desktop_20px;
+        }
+        @include lg{
+            margin-top: 20px;
+        }
+    }
+
+
+
+

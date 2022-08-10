@@ -1,0 +1,182 @@
+// 遠傳fetnet
+// 台灣大哥大taiwanmobile
+// HAPPYGO_happygo
+// 貸鼠先生roo
+// Money101
+// 實貸比較網alphaloan
+
+
+
+// ==========================================================
+// S2:產品特色feature
+// ==========================================================
+    .feature{
+        padding: $mobile_40px 0 $mobile_60px;
+        background: url('../images/obj_cloude_gold.png') no-repeat right bottom  -1px/  80% auto,
+                    $color_gray_F2F1F1;
+        @include md{
+            padding: $desktop_120px 0 $desktop_80px;
+            background: url('../images/obj_cloude_gold.png') no-repeat right bottom -1px /  40% auto,
+                        $color_gray_F2F1F1;
+        }
+        @include lg{
+            padding: 120px 0 80px;
+            background: url('../images/obj_cloude_gold.png') no-repeat right bottom -1px /  560px auto,
+                        $color_gray_F2F1F1;
+        }
+        .container{
+            position: relative;
+            @include md{
+                padding: $desktop_20px $desktop_110px 0 $desktop_110px;
+            }
+            @include lg{
+                padding: 20px 110px 0 110px;
+            }
+        }
+        h2{
+            margin-bottom: $mobile_10px;
+            @include md{
+                margin-bottom: $desktop_10px;
+            }
+            @include lg{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .happygo .feature{
+        padding: $mobile_40px 0 $mobile_60px;
+        @include md{
+            padding: $desktop_50px 0 $desktop_80px;
+        }
+        @include lg{
+            padding: 50px 0 80px;
+        }
+    }
+
+
+    .feature-list{
+        @include md{
+            display: flex;
+            max-width: 1080px;
+            margin: 0 auto;
+            position: relative;
+        }
+        li{
+            background: url('../images/features_itemCard_bg.png') no-repeat center center / cover;
+            width: 89.6%;
+            height: 0;
+            padding-bottom: 59.7333333333%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: $mobile_10px;
+            @include md{
+                flex: 0 0 33.3333333%;
+                width: auto;
+                padding-bottom: 22.6896551724%;
+                z-index: 10;
+                margin-bottom: $desktop_10px;
+            }
+            @include lg{
+                margin-bottom: 10px;
+            }
+        }
+        li:first-child .feature-item-title{
+            @include md{
+                display: flex;
+                align-items: baseline;
+                
+            }
+        }
+        li:nth-child(2){
+            @include md{
+                margin-top: 40px;
+            }
+        }
+        li:first-of-type .feature-item-note{
+            padding-bottom: $mobile_30px;
+        }
+    }
+
+    // 特色卡片內容
+    .feature-item-image{
+        flex: 0 0 41.6666666667%;
+        @include md{
+            flex: 0 0 44.4444444444%;
+        }
+    }
+    .feature-item-title{
+        flex: 1 0 0;
+        margin-top: $mobile_20px;
+        @include md{
+            margin-top: $desktop_20px;
+            align-items: center;
+        }
+        @include lg{
+            margin-top: 20px;
+        }
+    }
+    .feature-item-note{
+        flex: 0 0 100%;
+        padding-bottom: $mobile_15px;
+        @include md{
+            padding-bottom: $desktop_15px;
+        }
+        @include lg{
+            padding-bottom: 15px;
+        }
+    }
+
+
+    // 裝飾
+    .feature-cloud{
+        visibility: hidden;
+        width: 0;
+        @include md {
+            visibility: visible;
+            width: 22.2222222222%;
+            position: absolute;
+        }
+        &.left{
+            display: none;
+            @include md{
+                display: block;
+                top:  10%;
+                left:  2%;
+            }
+        }
+        &.right{
+            display: none;
+            @include md{
+                display: block;
+                top: 24%;
+                right: 0%;
+            }
+        }
+    }
+    .feature-person{
+        display: none;
+        @include md{
+            display: block;
+            width: 9.7222222222%;
+            position: absolute;
+            top: 10%;
+            left: 2%;
+        }
+    }
+    .feature-airport{
+        display: none;
+        @include md{
+            display: block;
+            width: 9.7222222222%;
+            position: absolute;
+            top: 24%;
+            right: 0%;
+        }
+    }
+
+
+
+
+

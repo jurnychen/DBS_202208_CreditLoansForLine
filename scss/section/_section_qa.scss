@@ -1,0 +1,385 @@
+// 遠傳fetnet
+// 台灣大哥大taiwanmobile
+// HAPPYGO_happygo
+// 貸鼠先生roo
+// Money101
+// 實貸比較網alphaloan
+
+
+
+
+// ==========================================================
+// S5:問答集qa
+// ==========================================================
+    .qa{
+        padding: $mobile_40px 0 $mobile_60px;
+        background: url(../images/qa_bg.png) repeat left top /16%;
+        @include md{
+            padding: $desktop_100px 0 $desktop_80px;
+            background-size: 5%;
+        }
+        @include lg{
+            padding: 100px 0 80px;
+        }
+
+        .container{
+            position: relative;
+        }
+
+        h2{
+            margin-bottom: $mobile_10px;
+            @include md{
+                margin-bottom: $desktop_40px;
+            }
+            @include lg{
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    // 裝飾
+    .qa-image{
+        visibility: hidden;
+        width: 0;
+        @include md{
+            visibility: visible;
+            width: 9.7222222222%;
+            position: absolute;
+            top: 9%;
+            right: -2%;
+        }
+    }
+
+    // QA區：本體
+    .qa-box-title{
+        margin-bottom: $mobile_40px;
+        padding: $mobile_20px 0;
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: $mobile_3px solid $color_blue_273043; 
+        border-radius: $mobile_20px; 
+        cursor: pointer;
+        @include md{
+            margin: 0 $desktop_100px $desktop_10px;
+            padding: $desktop_10px 0;
+            border: $desktop_3px solid $color_blue_273043;  
+            border-radius: $desktop_20px; 
+        }
+        @include lg{
+            margin: 0 100px 10px;
+            padding: 10px 0;
+            border: 3px solid $color_blue_273043;  
+            border-radius: 20px; 
+        }
+
+        // 補空
+        &::after{
+            content: '';
+            position: absolute;
+            width: 1em;
+            height: $mobile_5px;
+            right: 1em;
+            bottom: -$mobile_3px;
+            @include md{
+                height: $desktop_6px;
+                bottom: -$desktop_3px;
+            }
+            @include lg{
+                height: 6px;
+                bottom: -3px;
+            }
+        }
+
+    }
+
+    // QA區：顏色(各平台使用的主要色)
+        // 遠傳版 
+        .fetnet .qa-box-title{
+            background: $color_orange_FF604A_fetnet;
+            // 補空
+            &::after{
+                background-color: $color_orange_FF604A_fetnet;
+            }
+        }
+        // 台灣大哥大taiwanmobile 
+        .taiwanmobile .qa-box-title{
+            background: $color_orange_FF5F1F_taiwanmobile;
+            // 補空
+            &::after{
+                background-color: $color_orange_FF5F1F_taiwanmobile;
+            }
+        }
+        // HAPPYGO_happygo 
+        .happygo .qa-box-title{
+            background: $color_orange_DE1B2B_happygo;
+            // 補空
+            &::after{
+                background-color: $color_orange_DE1B2B_happygo;
+            }
+        }
+        // 貸鼠先生roo
+        .roo .qa-box-title{
+            background: $color_orange_CC3C14_roo;
+            // 補空
+            &::after{
+                background-color: $color_orange_CC3C14_roo;
+            }
+        }
+        // Money101 
+        .money101 .qa-box-title{
+            background: $color_orange_FF8640_money101;
+            // 補空
+            &::after{
+                background-color: $color_orange_FF8640_money101;
+            }
+        }
+        // 實貸比較網alphaloan 
+        .alphaloan .qa-box-title{
+            background: $color_orange_FFD438_alphaloan;
+            // 補空
+            &::after{
+                background-color: $color_orange_FFD438_alphaloan;
+            }
+        }
+
+
+
+
+
+    // 三角形
+    .qa-title-image{
+        transform: rotate(180deg);
+        transition: .3s;
+        img{
+            vertical-align: middle; 
+            margin-top: -$mobile_6px;
+            @include md{
+                margin-top: -$desktop_11px;
+            }
+            @include lg{
+                margin-top: -11px;
+            }
+        }
+        &.open img{
+            margin-top: -$mobile_6px;
+            @include md{
+                margin-top: -$desktop_9px;
+            }
+            @include lg{
+                margin-top: -9px;
+            }
+        }
+    }
+    .qa-box-title .qa-title-image{
+        flex: 0 0 $mobile_30px;
+        @include md{
+            flex: 0 0 $desktop_40px;
+        }
+        @include lg{
+            flex: 0 0 40px;
+        }
+    }
+    .qa-item .qa-title-image{
+        width: $mobile_30px;
+        @include md{
+            width: $desktop_40px;
+        }
+        @include lg{
+            width: 40px;
+        }
+
+    }
+
+
+
+
+
+
+    .qa-box-title.open{
+        border-bottom-left-radius: 0px;   
+        border-bottom-right-radius: 0px;
+        margin-bottom: 0;
+    }
+    .qa-box-title.open + .qa-box-list{
+        border-top: none;
+        display: block;
+        opacity: 1;
+    }
+
+
+    // QA區：內容
+    .qa-box-list{
+        background: $color_white_FFF;
+        border: $mobile_3px solid $color_blue_273043; 
+        border-top: 0px;
+        border-bottom-left-radius: $mobile_20px;
+        border-bottom-right-radius: $mobile_20px;
+        padding: 0 $mobile_10px;
+        margin-bottom: $mobile_40px;
+
+        position: relative;
+        display: none;
+        opacity: 0;
+        @include md{
+            border: $desktop_3px solid $color_blue_273043; 
+            border-bottom-left-radius: $desktop_20px;
+            border-bottom-right-radius: $desktop_20px;
+            padding: 0 $desktop_20px;
+            margin: 0 $desktop_100px $desktop_40px;
+        }
+        @include lg{
+            border: 3px solid $color_blue_273043; 
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 0 20px;
+            margin: 0 100px 40px;
+        }
+        // 補空
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 2em;
+            background-color: $color_white_FFF;
+        }
+        &::before{
+            left: -4px;
+            bottom: 40%;
+        }
+        &::after{
+            right: -4px;
+            bottom: 20%;
+        }
+    }
+
+
+
+    // QA：單項
+    .qa-item{
+        padding: $mobile_15px 0;
+        border-bottom: $mobile_3px solid $color_blue_273043;
+        @include md{
+            padding: $desktop_15px 0;
+            border-bottom: $desktop_3px solid $color_blue_273043;
+        }
+        @include lg{
+            padding: 15px 0;
+            border-bottom: 3px solid $color_blue_273043;
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+
+
+    // QA：標題
+    .qa-item dt{
+        width: 80%;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-left: 2em;
+        @include md{
+            width: 92%;
+        }
+
+        .qa-title-image{
+            position: absolute;
+            top: 0;
+            right: -1.7em;
+            @include md{
+            }
+            @include lg{
+            }
+
+        }
+    }
+    .qa-item dt + .qa-item dt{
+        @include md{
+            padding: $desktop_15px 0;
+        }
+        @include md{
+            padding: 15px 0;
+        }
+    }
+
+
+    // QA：答案
+    .qa-item dd{
+        width: 90%;
+        position: relative;
+        margin-left: 2em;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        @include md{
+            width: 95%;
+        }
+
+        a span{
+            text-decoration: underline;
+        }
+
+        // dd內的P，模擬為LI清單外觀
+        .style-li-decimal{
+            margin-left: 1em;
+            padding-bottom:  $mobile_10px;
+            text-indent: -1em;
+            a{
+                text-indent: 0;
+            }
+            @include md{
+                padding-bottom: $desktop_15px;
+            }
+            @include lg{
+                padding-bottom: 15px;
+            }
+        }
+    } 
+    .qa-item.open dd{
+        opacity: 1;
+        overflow: visible;
+        height: 100%;
+        padding: $mobile_15px $mobile_30px  $mobile_10px 0;
+        @include md{
+            padding: $desktop_15px $desktop_15px $desktop_15px 0;
+        }
+        @include lg{
+            padding: 15px 15px 15px 0;
+        }
+    }
+
+    // QA：字頭
+    .qa-item dt::before,  
+    .qa-item dd::before{
+        display: block;
+        position: absolute;
+        left: -1.25em;
+    } 
+    .qa-item dt::before{
+        content: 'Q';
+    } 
+    .qa-item dd::before{
+        content: 'A';
+    }
+
+    .qa-box-title.open .qa-title-image,
+    .qa-item.open .qa-title-image{
+        transform: rotate(0deg);
+    }
+    .qa-box-title h3,
+    .qa-box-title .qa-title-image{
+        pointer-events: none;
+        user-select: none;
+    }
+
+
+
+
+
+

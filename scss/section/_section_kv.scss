@@ -1,0 +1,364 @@
+// 遠傳fetnet
+// 台灣大哥大taiwanmobile
+// HAPPYGO_happygo
+// 貸鼠先生roo
+// Money101
+// 實貸比較網alphaloan
+
+// ==========================================================
+// S1:KV主視覺
+// ==========================================================
+    
+    .kv{
+        padding-top: 70px;
+        overflow: hidden;
+        position: relative;
+        background: url('../images/kv_bg-xs.jpg') repeat-x left bottom / auto 100%, $color_gray_F7F7F7;
+        @include md{
+            background:url('../images/kv_bg.jpg') repeat-x center bottom -0.5vw / auto 100%, $color_gray_F7F7F7;
+        }
+        @include lg{
+            background:url('../images/kv_bg.jpg') repeat-x center bottom -7px / auto 100%, $color_gray_F7F7F7;
+        }
+
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 80vw;  // width: 300px;
+            height: $mobile_40px;
+            bottom: 0;
+            background: url('../images/obj_cloude_gray.png') no-repeat center center / 100% auto;
+            @include md{
+                width: 42.857142857vw;
+                height: $desktop_80px;
+            }
+            @include lg{
+                width: 600px;
+                height: 80px;
+            }
+        }
+    }
+    // HAPPYGO_happygo 
+    .happygo .kv{
+        background: url('../images/kv_bg-xs.jpg') repeat-x left bottom -10vw / auto 100%, $color_gray_F7F7F7;
+        @include md{
+            background:url('../images/kv_bg.jpg') repeat-x center bottom -2vw / auto 100%, $color_gray_F7F7F7;
+        }
+        @include lg{
+            background:url('../images/kv_bg.jpg') repeat-x center bottom -14px / auto 100%, $color_gray_F7F7F7;
+        }
+        &::after{
+            background: url('../images_happygo/obj_cloude_red_happygo.png') no-repeat center center / 100% auto;
+            right: 0;
+        }
+    }
+
+
+
+    .kv .container{
+        padding: 0;
+        position: relative;
+        @include md{
+            height: 40vw;
+            // max-width: none;
+        }
+        @include lg{
+            height: 560px;
+        }
+
+        // 星展10週年Logo圖
+        &::before{
+            @include md{
+                content: '';
+                display: block;
+                position: absolute;
+                background:url('../images/dbs_10th.png') no-repeat center center / 100% auto;
+                width: 10%;
+                height: 20%;
+                top:0;
+                right: 0;
+            }
+
+        }
+    }
+
+    .kv-image-group{
+        position: relative;
+        margin: 0 auto;
+        @include md{
+            width: 110%;
+            overflow: hidden;
+            top: -3%;
+            left: -5%;
+        }
+    }
+    .happygo .kv-image-group{
+        @include md{
+            top: -2%;
+        }
+        @include lg{
+        }
+    }
+
+    .kv-text-group{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        @include md{
+            width: 40vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @include lg{
+            width: 530px;
+        }
+    }
+    .happygo .kv-text-group{
+        top: -2%;
+        @include md{
+            top: 0;
+        }
+        @include lg{
+        }
+    }
+
+    // 10週年標示區
+    .kv-10anniversary{
+        padding: $mobile_35px 0 $mobile_10px $mobile_10px ;
+        display: flex;
+        align-items: center;
+        @include md{
+            padding: $desktop_30px 0 $desktop_10px $desktop_10px ;
+        }
+        @include lg{
+            padding: 30px 0 10px 10px ;
+        }
+    }
+    .kv-10anniversary-title{
+        flex: 1 0 0;
+        @include md{
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            @include md{
+                padding: 0;
+            }
+        }
+    }
+
+    // 裝飾線
+    .kv-10anniversary-mark{
+        display: inline-block;
+        position: relative;
+    }
+    .kv-10anniversary-mark::before,
+    .kv-10anniversary-mark::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: $mobile_30px;
+        height: $mobile_30px;
+        background: url('../images/title_decoration.png') no-repeat left top / 100%;
+        @include md{
+            width: $desktop_40px;
+            height: $desktop_40px;
+        }
+        @include lg{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .kv-10anniversary-mark::before{
+        left: -$mobile_30px;
+        @include md{
+            left: -$desktop_40px;
+        }
+        @include lg{
+            left: -40px;
+        }
+    }
+    .kv-10anniversary-mark::after{
+        right: -$mobile_30px;
+        transform: scaleX(-1);
+        @include md{
+            right: -$desktop_40px;
+        }
+        @include lg{
+            right: -40px;
+        }
+    }
+
+
+
+    // 主標題區
+    .kv-title{
+        // outline: 1px solid #00f;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h1{
+            width: 100%;
+            padding: 0;
+            order:1;
+        }
+        h2{
+            width: 100%;
+            padding: $mobile_5px 0 ;
+            margin-bottom:  $mobile_15px;
+            @include md{
+                padding: $desktop_15px 0;
+                margin-bottom:  0;
+            }
+            @include lg{
+                padding: 15px 0;
+            }
+            span{
+                display: block;
+            }
+        }
+    }
+    .happygo {
+        .kv-title h2{
+            padding: $mobile_15px 0;
+            @include md{
+                padding: $desktop_10px 0;
+            }
+            @include lg{
+                padding: 10px 0;
+            }
+        }
+    }
+
+
+    .kv-title-promote{
+        width: 100%;
+        margin: 0 auto;
+        padding: $mobile_5px 0 $mobile_5px $mobile_10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include md{
+            margin: -$desktop_5px auto 0;
+            padding: 0;
+        }
+        @include lg{
+            margin: -5px auto 0;
+        }
+
+        p{position: relative;}
+
+        // 點點
+        p::before{
+            content: '';
+            position: absolute;
+            z-index: 10;
+            left: -0.55em;
+            top: 0.10em;
+            bottom: 0;
+            margin: auto 0;
+            width: 0.30em;
+            height: 0.30em;
+            border-radius:100px;
+            @include md{
+                top: 0.45em;
+            }
+        }
+        // 強調：數字
+        span{
+            vertical-align: sub;
+            @include md{
+                vertical-align: baseline;
+            }
+        }
+    }
+    .kv-title-promote,
+    .kv-title-text{
+        order:2;
+    }
+    // KV區特色文字：項目點點(各平台使用的主要色)
+    // 遠傳版
+    .fetnet .kv-title-promote p::before{
+        background-color: $color_orange_FF604A_fetnet;
+    }
+    // 台灣大哥大taiwanmobile 
+    .taiwanmobile .kv-title-promote p::before{
+        background-color: $color_orange_FF5F1F_taiwanmobile;
+    }
+    // HAPPYGO_happygo 
+    .happygo .kv-title-promote p::before{
+        background-color: $color_orange_DE1B2B_happygo;
+    }
+    // 貸鼠先生roo
+    .roo .kv-title-promote p::before{
+        background-color: $color_orange_CC3C14_roo;
+    }
+    // Money101 
+    .money101 .kv-title-promote p::before{
+        background-color: $color_orange_FF8640_money101;
+    }
+    // 實貸比較網alphaloan 
+    .alphaloan .kv-title-promote p::before{
+        background-color: $color_orange_FF8640_alphaloan;
+    }
+
+
+
+    .kv-detail{
+        width: 100%;
+        padding: $mobile_15px 0;
+        @include md{
+            padding: $desktop_10px 0;
+        }
+        @include lg{
+            padding: 10px 0;
+        }
+    }
+    .kv-button{
+        width: 100%;
+    }
+    .kv-apply{
+        margin-top: $mobile_20px;
+        @include md{
+            margin-top: $desktop_15px;
+        }
+        @include lg{
+            margin-top: 15px;
+        }
+    }
+
+    .happygo {
+        .kv-title-text{
+            // margin-top: -$mobile_5px;
+            @include md{
+                // margin-top: -$desktop_5px;
+            }
+            @include lg{
+                // margin-top: -5px;
+            }
+        }
+        .kv-apply{
+            margin-top: $mobile_20px;
+            @include md{
+                margin-top: $desktop_15px;
+            }
+            @include lg{
+                margin-top: 15px;
+            }
+        }
+    }
+
+
+
+
+

@@ -1,0 +1,1372 @@
+// 遠傳fetnet
+// 台灣大哥大taiwanmobile
+// HAPPYGO_happygo
+// 貸鼠先生roo
+// Money101
+// 實貸比較網alphaloan
+
+
+
+// ==========================================================
+// S1:KV主視覺
+// S2:產品特色feature
+// S3:線上申請四步驟step
+// S4:申辦資格qualification
+// S5:問答集qa
+// S6:專案介紹overview
+// S7:通路專屬優惠special
+// ==========================================================
+
+
+// ==========================================================
+// S1:KV主視覺
+// ==========================================================
+    
+    .kv{
+        padding-top: 70px;
+        overflow: hidden;
+        position: relative;
+        background: url('../images/kv_bg-xs.jpg') repeat-x left bottom / auto 100%, $color_gray_F7F7F7;
+        @include md{
+            background:url('../images/kv_bg.jpg') repeat-x center bottom -0.5vw / auto 100%, $color_gray_F7F7F7;
+        }
+        @include lg{
+            background:url('../images/kv_bg.jpg') repeat-x center bottom -7px / auto 100%, $color_gray_F7F7F7;
+        }
+
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 80vw;  // width: 300px;
+            height: $mobile_40px;
+            bottom: 0;
+            background: url('../images/obj_cloude_gray.png') no-repeat center center / 100% auto;
+            @include md{
+                width: 42.857142857vw;
+                height: $desktop_80px;
+            }
+            @include lg{
+                width: 600px;
+                height: 80px;
+            }
+        }
+    }
+    // HAPPYGO_happygo 
+    .happygo .kv{
+        background: url('../images/kv_bg-xs.jpg') repeat-x left bottom -10vw / auto 100%, $color_gray_F7F7F7;
+        @include md{
+            background:url('../images/kv_bg.jpg') repeat-x center bottom -2vw / auto 100%, $color_gray_F7F7F7;
+        }
+        @include lg{
+            background:url('../images/kv_bg.jpg') repeat-x center bottom -14px / auto 100%, $color_gray_F7F7F7;
+        }
+        &::after{
+            background: url('../images_happygo/obj_cloude_red_happygo.png') no-repeat center center / 100% auto;
+            right: 0;
+        }
+    }
+
+
+
+    .kv .container{
+        padding: 0;
+        position: relative;
+        @include md{
+            height: 40vw;
+            // max-width: none;
+        }
+        @include lg{
+            height: 560px;
+        }
+
+        // 星展10週年Logo圖
+        &::before{
+            @include md{
+                content: '';
+                display: block;
+                position: absolute;
+                background:url('../images/dbs_10th.png') no-repeat center center / 100% auto;
+                width: 10%;
+                height: 20%;
+                top:0;
+                right: 0;
+            }
+
+        }
+    }
+
+    .kv-image-group{
+        position: relative;
+        margin: 0 auto;
+        @include md{
+            width: 110%;
+            overflow: hidden;
+            top: -3%;
+            left: -5%;
+        }
+    }
+    .happygo .kv-image-group{
+        @include md{
+            top: -2%;
+        }
+        @include lg{
+        }
+    }
+
+    .kv-text-group{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        @include md{
+            width: 37.857142857vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @include lg{
+            width: 530px;
+        }
+    }
+    .happygo .kv-text-group{
+        top: -2%;
+        @include md{
+        }
+        @include lg{
+        }
+    }
+
+    // 10週年標示區
+    .kv-10anniversary{
+        padding: $mobile_35px 0 $mobile_10px $mobile_10px ;
+        display: flex;
+        align-items: center;
+        @include md{
+            padding: $desktop_40px 0 $desktop_10px $desktop_10px ;
+        }
+        @include lg{
+            padding: 40px 0 10px 10px ;
+        }
+    }
+    .kv-10anniversary-title{
+        flex: 1 0 0;
+        @include md{
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            @include md{
+                padding: 0;
+            }
+        }
+    }
+
+    // 裝飾線
+    .kv-10anniversary-mark{
+        display: inline-block;
+        position: relative;
+    }
+    .kv-10anniversary-mark::before,
+    .kv-10anniversary-mark::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: $mobile_30px;
+        height: $mobile_30px;
+        background: url('../images/title_decoration.png') no-repeat left top / 100%;
+        @include md{
+            width: $desktop_40px;
+            height: $desktop_40px;
+        }
+        @include lg{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .kv-10anniversary-mark::before{
+        left: -$mobile_30px;
+        @include md{
+            left: -$desktop_40px;
+        }
+        @include lg{
+            left: -40px;
+        }
+    }
+    .kv-10anniversary-mark::after{
+        right: -$mobile_30px;
+        transform: scaleX(-1);
+        @include md{
+            right: -$desktop_40px;
+        }
+        @include lg{
+            right: -40px;
+        }
+    }
+
+
+
+    // 主標題區
+    .kv-title{
+        width: 100%;
+        margin: auto;
+
+        h1{
+            padding: 0;
+        }
+        h2{
+            padding: $mobile_5px 0;
+            @include md{
+                padding: $desktop_15px 0;
+            }
+            @include lg{
+                padding: 15px 0;
+            }
+        }
+    }
+    .happygo {
+        .kv-title h2{
+            padding: $mobile_5px 0;
+            @include md{
+                padding: $desktop_5px 0;
+            }
+            @include lg{
+                padding: 5px 0;
+            }
+        }
+    }
+
+
+    .kv-title-promote{
+        width: 90%;
+        margin: 0 auto;
+        padding: $mobile_5px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include md{
+            margin: 0 auto;
+            padding: $desktop_5px 0;
+        }
+        @include lg{
+            padding: 5px 0;
+        }
+
+        p{position: relative;}
+
+        // 點點
+        p::before{
+            content: '';
+            position: absolute;
+            z-index: 10;
+            left: -1em;
+            top: 0.15em;
+            bottom: 0;
+            margin: auto 0;
+            width: 1em;
+            height: 1em;
+            @include md{
+                top: 0.45em;
+            }
+        }
+        // 強調：數字
+        span{
+            vertical-align: sub;
+            @include md{
+                vertical-align: baseline;
+            }
+        }
+    }
+    // KV區特色文字：項目點點(各平台使用的主要色)
+    // 遠傳版
+    .fetnet .kv-title-promote p::before{
+        background: url('../images_fetnet/icon_listStyle_fetnet.png') no-repeat left top / cover;
+    }
+    // 台灣大哥大taiwanmobile 
+    .taiwanmobile .kv-title-promote p::before{
+        background: url('../images_taiwanmobile/icon_listStyle_taiwanmobile.png') no-repeat left top / cover;
+    }
+    // HAPPYGO_happygo 
+    .happygo .kv-title-promote p::before{
+        background: url('../images_happygo/icon_listStyle_happygo.png') no-repeat left top / cover;
+    }
+    // 貸鼠先生roo
+    .roo .kv-title-promote p::before{
+        background: url('../images_roo/icon_listStyle_roo.png') no-repeat left top / cover;
+    }
+    // Money101 
+    .money101 .kv-title-promote p::before{
+        background: url('../images_money101/icon_listStyle_money101.png') no-repeat left top / cover;
+    }
+    // 實貸比較網alphaloan 
+    .alphaloan .kv-title-promote p::before{
+        background: url('../images_alphaloan/icon_listStyle_alphaloan.png') no-repeat left top / cover;
+    }
+
+
+
+    .kv-detail{
+        width: 100%;
+        padding: $mobile_15px 0;
+        @include md{
+            padding: $desktop_10px 0;
+        }
+        @include lg{
+            padding: 10px 0;
+        }
+    }
+    .kv-button{
+        width: 100%;
+    }
+    .kv-apply{
+        margin-top: $mobile_40px;
+        @include md{
+            margin-top: $desktop_25px;
+        }
+        @include lg{
+            margin-top: 25px;
+        }
+    }
+
+    .happygo {
+        .kv-title-text{
+            margin-top: $mobile_5px;
+            @include md{
+                margin-top: $desktop_5px;
+            }
+            @include lg{
+                margin-top: 5px;
+            }
+        }
+        .kv-apply{
+            margin-top: $mobile_20px;
+            @include md{
+                margin-top: $desktop_15px;
+            }
+            @include lg{
+                margin-top: 15px;
+            }
+        }
+    }
+
+
+
+
+
+// ==========================================================
+// S2:產品特色feature
+// ==========================================================
+    .feature{
+        padding: $mobile_40px 0 $mobile_60px;
+        background: url('../images/obj_cloude_gold.png') no-repeat right bottom  -1px/  80% auto,
+                    $color_gray_F2F1F1;
+        @include md{
+            padding: $desktop_120px 0 $desktop_80px;
+            background: url('../images/obj_cloude_gold.png') no-repeat right bottom -1px /  40% auto,
+                        $color_gray_F2F1F1;
+        }
+        @include lg{
+            padding: 120px 0 80px;
+            background: url('../images/obj_cloude_gold.png') no-repeat right bottom -1px /  560px auto,
+                        $color_gray_F2F1F1;
+        }
+        .container{
+            position: relative;
+            @include md{
+                padding: $desktop_20px $desktop_110px 0 $desktop_110px;
+            }
+            @include lg{
+                padding: 20px 110px 0 110px;
+            }
+        }
+        h2{
+            margin-bottom: $mobile_10px;
+            @include md{
+                margin-bottom: $desktop_10px;
+            }
+            @include lg{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .happygo .feature{
+        padding: $mobile_40px 0 $mobile_60px;
+        @include md{
+            padding: $desktop_50px 0 $desktop_80px;
+        }
+        @include lg{
+            padding: 50px 0 80px;
+        }
+    }
+
+
+    .feature-list{
+        @include md{
+            display: flex;
+            max-width: 1080px;
+            margin: 0 auto;
+            position: relative;
+        }
+        li{
+            background: url('../images/features_itemCard_bg.png') no-repeat center center / cover;
+            width: 89.6%;
+            height: 0;
+            padding-bottom: 59.7333333333%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: $mobile_10px;
+            @include md{
+                flex: 0 0 33.3333333%;
+                width: auto;
+                padding-bottom: 22.6896551724%;
+                z-index: 10;
+                margin-bottom: $desktop_10px;
+            }
+            @include lg{
+                margin-bottom: 10px;
+            }
+        }
+        li:first-child .feature-item-title{
+            @include md{
+                display: flex;
+                align-items: baseline;
+                
+            }
+        }
+        li:nth-child(2){
+            @include md{
+                margin-top: 40px;
+            }
+        }
+        li:first-of-type .feature-item-note{
+            padding-bottom: $mobile_30px;
+        }
+    }
+
+    // 特色卡片內容
+    .feature-item-image{
+        flex: 0 0 41.6666666667%;
+        @include md{
+            flex: 0 0 44.4444444444%;
+        }
+    }
+    .feature-item-title{
+        flex: 1 0 0;
+        margin-top: $mobile_20px;
+        @include md{
+            margin-top: $desktop_20px;
+            align-items: center;
+        }
+        @include lg{
+            margin-top: 20px;
+        }
+    }
+    .feature-item-note{
+        flex: 0 0 100%;
+        padding-bottom: $mobile_15px;
+        @include md{
+            padding-bottom: $desktop_15px;
+        }
+        @include lg{
+            padding-bottom: 15px;
+        }
+    }
+
+
+    // 裝飾
+    .feature-cloud{
+        visibility: hidden;
+        width: 0;
+        @include md {
+            visibility: visible;
+            width: 22.2222222222%;
+            position: absolute;
+        }
+        &.left{
+            display: none;
+            @include md{
+                display: block;
+                top:  10%;
+                left:  2%;
+            }
+        }
+        &.right{
+            display: none;
+            @include md{
+                display: block;
+                top: 24%;
+                right: 0%;
+            }
+        }
+    }
+    .feature-person{
+        display: none;
+        @include md{
+            display: block;
+            width: 9.7222222222%;
+            position: absolute;
+            top: 10%;
+            left: 2%;
+        }
+    }
+    .feature-airport{
+        display: none;
+        @include md{
+            display: block;
+            width: 9.7222222222%;
+            position: absolute;
+            top: 24%;
+            right: 0%;
+        }
+    }
+
+
+
+
+
+// ==========================================================
+// S3:線上申請四步驟step
+// ==========================================================
+    .step{
+        padding: $mobile_40px 0 $mobile_80px;
+        background: url('../images/obj_cloude_gray.png') no-repeat left bottom /  90% auto,
+                    $color_coffee_EBDECE;
+        @include md{
+            padding: $desktop_80px 0 $desktop_80px;
+            background: url('../images/obj_cloude_gray.png') no-repeat left bottom -1px /  40% auto,
+                        $color_coffee_EBDECE;
+        }
+        @include lg{
+            padding: 80px 0 80px;
+            background: url('../images/obj_cloude_gray.png') no-repeat left bottom -1px /  560px auto,
+                        $color_coffee_EBDECE;
+        }
+        h2{
+            margin-bottom: $mobile_10px;
+            @include md{
+                margin-bottom: $desktop_10px;
+            }
+            @include lg{
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .step-wrap{
+        @include md{
+            display: flex;
+        }
+    }
+
+    // 步驟說明區
+    .step-list{
+        @include md{
+            // 420px
+            flex: 0 0 33.333333%;
+        }
+        li{
+            // 380px
+            width: 90.476190476%;
+            height: 0;
+            padding-bottom: 21.3333333333%;
+            margin: 0 auto;
+            position: relative;
+            background: url(../images/step_item_bg-xs.png) no-repeat right center / contain;
+        }
+    }
+    .step-item-image{
+        position: absolute;
+        // 100px
+        width: 26.315789474%;
+        height: 0;
+        padding-bottom: 26.315789474%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+    .step-item-title{
+        position: absolute;
+        top: 50%;
+        left: 26.3157894737%;
+        transform: translateY(-50%);
+    }
+
+    // 影片區
+    .step-video-wrap{
+        width: 100%;
+        @include md{
+            // 840px
+            flex: 0 0 66.666667%;
+            position: relative;
+        }
+    }
+    .step-video{
+        // 340px x 209px
+        width: 100%;
+        height: 0;
+        padding-bottom: 61.470588235%;
+        margin: 0 auto;
+        position: relative;
+        @include md{
+            // 700px x 430px
+            width: 83.333333333%;
+            padding-bottom: 51.1904762%;
+            margin: 0 auto 0 0;
+        }
+    }
+    // 影片區：背景(各平台使用的主要色)
+        // 遠傳版
+        .fetnet .step-video{
+            background: url(../images_fetnet/step_video_bg_fetnet.png) no-repeat center center / 100% auto;
+        }
+        // 台灣大哥大taiwanmobile 
+        .taiwanmobile .step-video{
+            background: url(../images_taiwanmobile/step_video_bg_taiwanmobile.png) no-repeat center center / 100% auto;
+        }
+        // HAPPYGO_happygo 
+        .happygo .step-video{
+            background: url(../images_happygo/step_video_bg_happygo.png) no-repeat center center / 100% auto;
+        }
+        // 貸鼠先生roo
+        .roo .step-video{
+            background: url(../images_roo/step_video_bg_roo.png) no-repeat center center / 100% auto;
+        }
+        // Money101 
+        .money101 .step-video{
+            background: url(../images_money101/step_video_bg_money101.png) no-repeat center center / 100% auto;
+        }
+        // 實貸比較網alphaloan 
+        .alphaloan .step-video{
+            background: url(../images_alphaloan/step_video_bg_alphaloan.png) no-repeat center center / 100% auto;
+        }
+
+    // 影片區:YT顯示區
+    .step-video-iframe{
+        // 310px x 174px
+        width: 91.428571429%;
+        height: 83.720930233%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 2.5%;
+        margin: auto;
+        @include md{
+            // 640px x 360px
+            width: 91.428571429%;
+            height: 83.720930233%;
+            bottom: 2.5%;
+            margin: auto;
+        }
+    }
+    .step-video-title{
+        width: 100%;
+        margin: 0 0 $mobile_20px 0;
+        @include md{
+            width: 83.333333333%;
+            margin: 0 0 $desktop_20px 0;
+        }
+        @include lg{
+            margin: 0 0 20px 0;
+        }
+    }
+    .step-image{
+        visibility: hidden;
+        width: 0;
+        @include md{
+            visibility: visible;
+            // 140px x 430px
+            width: 16.666666667%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+    // 按紐區
+    .step .apply{
+        margin-top: $mobile_20px;
+        @include md{
+            margin-top: $desktop_10px;
+        }
+        @include lg{
+            margin-top: 10px;
+        }
+    }
+
+
+
+
+
+
+// ==========================================================
+// S4:申辦資格qualification
+// ==========================================================
+    .qualification{
+        padding: $mobile_40px 0 $mobile_200px;
+        background: $color_gray_F2F1F1;
+        @include md{
+            padding: $desktop_100px 0 $desktop_80px;
+        }
+        @include lg{
+            padding: 100px 0 80px;
+        }
+        .container{
+            position: relative;
+        }
+        h2{
+            margin-bottom: $mobile_10px;
+            @include md{
+                margin-bottom: $desktop_40px;
+            }
+            @include lg{
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .qualification-cloud{
+        visibility: hidden;
+        width: 0;
+        @include md{
+            visibility: visible;
+            width: 22.2222222222%;
+            position: absolute;
+        }
+        &.left{
+            top: 1%;
+            left: -1%;
+        }
+        &.right{
+            top: 30%;
+            right: 5%;
+        }
+    }
+
+
+    .qualification-wrap{
+        position: relative;
+    }
+    .qualification-image{
+        @include md{
+            width: 43.75%;
+        }
+    }
+
+    // 文字區
+    .qualification-box{
+        background-color: $color_white_FFF;
+        position: absolute;
+        width: 88.2352941176%;
+        bottom: 0;
+        right: 0;
+        padding: $mobile_20px;
+        border: $mobile_3px solid $color_blue_273043;
+        border-radius: 20px;
+        transform: translateY(62%);
+        @include md{
+            width: 55.5555555556%;
+            top: 50%;
+            bottom: auto;
+            right: 6%;
+            padding: $desktop_40px;
+            border: $desktop_3px solid $color_blue_273043;
+            transform: translateY(-50%);
+        }
+        @include lg{
+            width: 55.5555555556%;
+            top: 50%;
+            bottom: auto;
+            right: 6%;
+            padding: 40px;
+            border: 3px solid $color_blue_273043;
+            transform: translateY(-50%);
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 2em;
+            background-color: $color_white_FFF;
+            left: -4px;
+            bottom: 2em;
+        }
+        .apply{
+            margin-left: 0;
+        }
+    }
+
+    .qualification-title{
+        padding: $mobile_15px 0;
+        @include md{
+            padding: 0 0 $desktop_15px 0;
+        }
+        @include lg{
+            padding: 0 0 15px 0;
+        }
+    }
+
+
+
+
+
+
+
+
+// ==========================================================
+// S5:問答集qa
+// ==========================================================
+    .qa{
+        padding: $mobile_40px 0 $mobile_60px;
+        background: url(../images/qa_bg.png) repeat left top /16%;
+        @include md{
+            padding: $desktop_100px 0 $desktop_80px;
+            background-size: 5%;
+        }
+        @include lg{
+            padding: 100px 0 80px;
+        }
+
+        .container{
+            position: relative;
+        }
+
+        h2{
+            margin-bottom: $mobile_10px;
+            @include md{
+                margin-bottom: $desktop_40px;
+            }
+            @include lg{
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    // 裝飾
+    .qa-image{
+        visibility: hidden;
+        width: 0;
+        @include md{
+            visibility: visible;
+            width: 9.7222222222%;
+            position: absolute;
+            top: 9%;
+            right: -2%;
+        }
+    }
+
+    // QA區：本體
+    .qa-box-title{
+        margin-bottom: $mobile_40px;
+        padding: $mobile_20px 0;
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: $mobile_3px solid $color_blue_273043; 
+        border-radius: $mobile_20px; 
+        cursor: pointer;
+        @include md{
+            margin: 0 $desktop_100px $desktop_10px;
+            padding: $desktop_10px 0;
+            border: $desktop_3px solid $color_blue_273043;  
+            border-radius: $desktop_20px; 
+        }
+        @include lg{
+            margin: 0 100px 10px;
+            padding: 10px 0;
+            border: 3px solid $color_blue_273043;  
+            border-radius: 20px; 
+        }
+
+        // 補空
+        &::after{
+            content: '';
+            position: absolute;
+            width: 1em;
+            height: $mobile_5px;
+            right: 1em;
+            bottom: -$mobile_3px;
+            @include md{
+                height: $desktop_6px;
+                bottom: -$desktop_3px;
+            }
+            @include lg{
+                height: 6px;
+                bottom: -3px;
+            }
+        }
+
+    }
+
+    // QA區：顏色(各平台使用的主要色)
+        // 遠傳版 
+        .fetnet .qa-box-title{
+            background: $color_orange_FF604A_fetnet;
+            // 補空
+            &::after{
+                background-color: $color_orange_FF604A_fetnet;
+            }
+        }
+        // 台灣大哥大taiwanmobile 
+        .taiwanmobile .qa-box-title{
+            background: $color_orange_FF5F1F_taiwanmobile;
+            // 補空
+            &::after{
+                background-color: $color_orange_FF5F1F_taiwanmobile;
+            }
+        }
+        // HAPPYGO_happygo 
+        .happygo .qa-box-title{
+            background: $color_orange_DE1B2B_happygo;
+            // 補空
+            &::after{
+                background-color: $color_orange_DE1B2B_happygo;
+            }
+        }
+        // 貸鼠先生roo
+        .roo .qa-box-title{
+            background: $color_orange_CC3C14_roo;
+            // 補空
+            &::after{
+                background-color: $color_orange_CC3C14_roo;
+            }
+        }
+        // Money101 
+        .money101 .qa-box-title{
+            background: $color_orange_FF8640_money101;
+            // 補空
+            &::after{
+                background-color: $color_orange_FF8640_money101;
+            }
+        }
+        // 實貸比較網alphaloan 
+        .alphaloan .qa-box-title{
+            background: $color_orange_FFD438_alphaloan;
+            // 補空
+            &::after{
+                background-color: $color_orange_FFD438_alphaloan;
+            }
+        }
+
+
+
+
+
+    // 三角形
+    .qa-title-image{
+        transform: rotate(180deg);
+        transition: .3s;
+        img{
+            vertical-align: middle; 
+            margin-top: -$mobile_6px;
+            @include md{
+                margin-top: -$desktop_11px;
+            }
+            @include lg{
+                margin-top: -11px;
+            }
+        }
+        &.open img{
+            margin-top: -$mobile_6px;
+            @include md{
+                margin-top: -$desktop_9px;
+            }
+            @include lg{
+                margin-top: -9px;
+            }
+        }
+    }
+    .qa-box-title .qa-title-image{
+        flex: 0 0 $mobile_30px;
+        @include md{
+            flex: 0 0 $desktop_40px;
+        }
+        @include lg{
+            flex: 0 0 40px;
+        }
+    }
+    .qa-item .qa-title-image{
+        width: $mobile_30px;
+        @include md{
+            width: $desktop_40px;
+        }
+        @include lg{
+            width: 40px;
+        }
+
+    }
+
+
+
+
+
+
+    .qa-box-title.open{
+        border-bottom-left-radius: 0px;   
+        border-bottom-right-radius: 0px;
+        margin-bottom: 0;
+    }
+    .qa-box-title.open + .qa-box-list{
+        border-top: none;
+        display: block;
+        opacity: 1;
+    }
+
+
+    // QA區：內容
+    .qa-box-list{
+        background: $color_white_FFF;
+        border: $mobile_3px solid $color_blue_273043; 
+        border-top: 0px;
+        border-bottom-left-radius: $mobile_20px;
+        border-bottom-right-radius: $mobile_20px;
+        padding: 0 $mobile_10px;
+        margin-bottom: $mobile_40px;
+
+        position: relative;
+        display: none;
+        opacity: 0;
+        @include md{
+            border: $desktop_3px solid $color_blue_273043; 
+            border-bottom-left-radius: $desktop_20px;
+            border-bottom-right-radius: $desktop_20px;
+            padding: 0 $desktop_20px;
+            margin: 0 $desktop_100px $desktop_40px;
+        }
+        @include lg{
+            border: 3px solid $color_blue_273043; 
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 0 20px;
+            margin: 0 100px 40px;
+        }
+        // 補空
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 2em;
+            background-color: $color_white_FFF;
+        }
+        &::before{
+            left: -4px;
+            bottom: 40%;
+        }
+        &::after{
+            right: -4px;
+            bottom: 20%;
+        }
+    }
+
+
+
+    // QA：單項
+    .qa-item{
+        padding: $mobile_15px 0;
+        border-bottom: $mobile_3px solid $color_blue_273043;
+        @include md{
+            padding: $desktop_15px 0;
+            border-bottom: $desktop_3px solid $color_blue_273043;
+        }
+        @include lg{
+            padding: 15px 0;
+            border-bottom: 3px solid $color_blue_273043;
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+
+
+    // QA：標題
+    .qa-item dt{
+        width: 80%;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-left: 2em;
+        @include md{
+            width: 92%;
+        }
+
+        .qa-title-image{
+            position: absolute;
+            top: 0;
+            right: -1.7em;
+            @include md{
+            }
+            @include lg{
+            }
+
+        }
+    }
+    .qa-item dt + .qa-item dt{
+        @include md{
+            padding: $desktop_15px 0;
+        }
+        @include md{
+            padding: 15px 0;
+        }
+    }
+
+
+    // QA：答案
+    .qa-item dd{
+        width: 90%;
+        position: relative;
+        margin-left: 2em;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        @include md{
+            width: 95%;
+        }
+
+        a span{
+            text-decoration: underline;
+        }
+
+        // dd內的P，模擬為LI清單外觀
+        .style-li-decimal{
+            margin-left: 1em;
+            padding-bottom:  $mobile_10px;
+            text-indent: -1em;
+            a{
+                text-indent: 0;
+            }
+            @include md{
+                padding-bottom: $desktop_15px;
+            }
+            @include lg{
+                padding-bottom: 15px;
+            }
+        }
+    } 
+    .qa-item.open dd{
+        opacity: 1;
+        overflow: visible;
+        height: 100%;
+        padding: $mobile_15px $mobile_30px  $mobile_10px 0;
+        @include md{
+            padding: $desktop_15px $desktop_15px $desktop_15px 0;
+        }
+        @include lg{
+            padding: 15px 15px 15px 0;
+        }
+    }
+
+    // QA：字頭
+    .qa-item dt::before,  
+    .qa-item dd::before{
+        display: block;
+        position: absolute;
+        left: -1.25em;
+    } 
+    .qa-item dt::before{
+        content: 'Q';
+    } 
+    .qa-item dd::before{
+        content: 'A';
+    }
+
+    .qa-box-title.open .qa-title-image,
+    .qa-item.open .qa-title-image{
+        transform: rotate(0deg);
+    }
+    .qa-box-title h3,
+    .qa-box-title .qa-title-image{
+        pointer-events: none;
+        user-select: none;
+    }
+
+
+
+
+
+
+// ==========================================================
+// S6:專案介紹overview
+// ==========================================================
+    .overview{
+        padding: $mobile_40px 0 $mobile_60px;
+        background: $color_gray_F2F1F1;
+        @include md{
+            padding: $desktop_40px 0 $desktop_60px;
+        }
+        @include lg{
+            padding: 40px 0 60px;
+        }
+        .container{
+            padding: 0 $mobile_27px;
+            @include md{
+                padding: 0 $desktop_27px;
+            }
+            @include lg{
+                padding: 0 27px;
+            }
+        }
+    }
+    .overview h2{
+        margin-bottom: $mobile_10px;
+        @include md{
+            margin-bottom: $desktop_10px;
+        }
+        @include lg{
+            margin-bottom: 10px;
+        }
+    }
+    .happygo .overview h2{
+        span{
+            display: block;
+        }
+        @include md{
+            span{
+                display: inline-block;
+            }
+        }
+        @include lg{
+            
+        }
+    }
+    .overview-list{
+        padding: 0 $mobile_10px;
+        @include md{
+            padding: 0 $desktop_10px;
+        }
+        @include lg{
+            padding: 0 10px;
+        }
+
+        a{
+            text-decoration-line: underline;
+        }
+    }
+
+    .overview h2:nth-of-type(2){
+
+        padding-top: $mobile_70px;
+        @include md{
+            padding-top: $desktop_50px;
+        }
+        @include lg{
+            padding-top: 50px;
+        }
+    }
+    .overview-list li{
+        list-style: decimal;
+        margin-left: 2em;
+    }
+    .overview-list .hidetxt{
+        display: none;
+    }
+    .overview-detail{
+        margin-top: $mobile_20px;
+        @include md{
+            margin-top: $desktop_20px;
+        }
+        @include lg{
+            margin-top: 20px;
+        }
+    }
+
+
+
+
+
+
+
+// ==========================================================
+// S7:通路專屬優惠special
+// ==========================================================
+    .special{
+        padding: $mobile_40px 0 $mobile_60px;
+        background: url('../images/obj_cloude_gray.png') no-repeat left bottom  -1px/  80% auto,
+                    #F4DDAB;
+        @include md{
+            padding: $desktop_60px 0 $desktop_80px;
+            background: url('../images/obj_cloude_gray.png') no-repeat left bottom -1px /  40% auto,
+                        #F4DDAB;
+        }
+        @include lg{
+            padding: 60px 0 80px;
+            background: url('../images/obj_cloude_gray.png') no-repeat left bottom -1px /  560px auto,
+                        #F4DDAB;
+        }
+        .container{
+            // outline: 1px solid #0ff;
+            position: relative;
+            @include md{
+                padding: 0 $desktop_110px;
+            }
+            @include lg{
+                padding: 0 110px;
+            }
+        }
+        .h2-mark{
+            span{
+                display: block;
+            }
+        }
+        .h2-mark::before,
+        .h2-mark::after{
+            // background: url('../images/title_decoration_white.png') no-repeat left top / 100%;
+        }
+
+    }
+
+    .special-promote{
+        position: relative;
+        padding: $mobile_10px 0;
+        @include md{
+            width: 80%;
+            margin: 0 auto;
+            padding: $desktop_10px 0;
+            &::before,
+            &::after{
+                // outline: 1px solid #f00;
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-40%);
+                width: 18%;
+                height: 0;
+                padding-bottom: 40%;
+            }
+            &::before{
+                left: -18%;
+                background: url('../images_happygo/special_bg_obj_money_happygo.png') no-repeat center / 100%;
+            }
+            &::after{
+                right: -18%;
+                background: url('../images_happygo/special_bg_obj_man_happygo.png') no-repeat center / 100%;
+            }
+        }
+        @include lg{
+            padding: 10px 0;
+            &::before,
+            &::after{
+                transform: translateY(-25%);
+            }
+
+        }
+        span{
+            display: block;
+        }
+
+    }
+    .special-text{}
+
+
+

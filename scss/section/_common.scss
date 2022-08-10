@@ -1,0 +1,341 @@
+@charset "UTF-8";
+
+@import "../base/_color.scss";
+@import "../base/_mediaquery.scss";
+@import "../base/_variables.scss";
+
+
+// ==========================================================
+// 1_基本設定
+// 2_按紐
+// 3_標題
+// 4_側邊
+// ==========================================================
+
+
+
+// ==========================================================
+// 1_基本設定
+// ==========================================================
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: inherit;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: attr(width) / attr(height);
+    	vertical-align: top;
+    }
+
+    a{
+    	display: inline-block;
+    	vertical-align: top;
+    }
+
+    a:link, a:hover , a:active, a:focus, a:visited{
+        text-decoration: none;
+    }
+
+    button{
+        -webkit-appearance: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .container{ 
+        margin: 0 auto;  
+        padding: 0 $mobile_17px; 
+        width: 100%;
+        max-width: 100%;
+        @include md{
+            max-width: 1440px;
+            padding: 0 $desktop_17px;
+        }
+        @include lg{
+            padding: 0 17px;
+        }
+    }
+    .ap{
+        position: relative;
+        top: -$mobile_70px;
+        @include md{
+             top: -$desktop_80px;
+        }
+        @include lg{
+             top: -80px;
+        }
+    }
+
+
+
+// ==========================================================
+// 2_按紐
+// ==========================================================
+    .dbs-btn{
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        margin: 0 auto;
+        background: $color_blue_273043;
+
+        .dbs-btn-title{
+            padding: $mobile_13px $mobile_10px $mobile_13px $mobile_15px;
+            @include md{
+                padding: $desktop_13px $desktop_10px $desktop_13px $desktop_15px;
+            }
+            @include lg{
+                padding: 13px 10px 13px 15px;
+            }
+        }
+        .dbs-btn-image{
+            padding: $mobile_13px $mobile_10px;
+            @include md{
+                padding: $desktop_10px;
+            }
+            @include lg{
+                padding: 10px;
+            }
+        }
+        .dbs-btn-image img{
+            width: 30px;
+        }
+    }
+
+
+    // 按紐：基本顏色(各平台使用的主要色)
+    // 遠傳版 
+    .fetnet .dbs-btn-image{
+        background: $color_orange_FF604A_fetnet;
+    }
+    // 台灣大哥大taiwanmobile 
+    .taiwanmobile .dbs-btn-image{
+        background: $color_orange_FF5F1F_taiwanmobile;
+    }
+    // HAPPYGO_happygo 
+    .happygo .dbs-btn-image{
+        background: $color_orange_DE1B2B_happygo;
+    }
+    // 貸鼠先生roo
+    .roo .dbs-btn-image{
+        background: $color_orange_CC3C14_roo;
+    }
+    // Money101 
+    .money101 .dbs-btn-image{
+        background: $color_orange_FF8640_money101;
+    }
+    // 實貸比較網alphaloan 
+    .alphaloan .dbs-btn-image{
+        background: $color_orange_FF8640_alphaloan;
+    }
+
+
+    .dbs-btn-detail{
+        padding: $mobile_10px 0;
+        @include md{
+            padding: $desktop_10px 0 0;
+        }
+        @include lg{
+            padding: 10px 0 0;
+        }
+    }
+    .dbs-btn-detail br{
+        @include md{
+            display: none;
+        }
+    }
+    .dbs-btn .dbs-btn-title,
+    .dbs-btn .dbs-btn-image{
+        pointer-events: none;
+        user-select: none;
+    }
+
+
+
+// ==========================================================
+// 3_標題
+// ==========================================================
+    .h2-mark{
+        display: inline-block;
+        position: relative;
+    }
+    .h2-mark::before,
+    .h2-mark::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: $mobile_40px;
+        height: $mobile_40px;
+        background: url('../images/title_decoration.png') no-repeat left top / 100%;
+        @include md{
+            width: $desktop_80px;
+            height: $desktop_80px;
+        }
+        @include lg{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .h2-mark::before{
+        left: -$mobile_40px;
+        @include md{
+            left: -$desktop_80px;
+        }
+        @include lg{
+            left: -80px;
+        }
+    }
+    .h2-mark::after{
+        right: -$mobile_40px;
+        transform: scaleX(-1);
+        @include md{
+            right: -$desktop_80px;
+        }
+        @include lg{
+            right: -80px;
+        }
+    }
+
+
+
+
+
+
+// ==========================================================
+// 4_側邊
+// ==========================================================
+    .sidebar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        bottom: 0;
+        z-index: 50;
+        @include md{
+            width: auto;
+            right: $desktop_10px;
+            position: fixed;
+            bottom: 30%;
+            flex-direction: column;
+        }
+        @include lg{
+            right: 10px;
+        }
+    }
+    .sidebar-item{
+        flex: 0 0 50%;
+        padding: $mobile_10px 0;
+        @include md{
+            margin: 0.25em 0;
+            width: 4em;
+            padding: $desktop_20px 0;
+            border-radius: 50%;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23273043' stroke-width='6' stroke-dasharray='35' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+        }
+        @include lg{
+            padding: 20px 0;
+        }
+
+        // 按紐：與我連絡
+        &.contact{
+            background-color: $color_blue_5C5B86; 
+        }
+    }
+ 
+    // 按紐：線上申請(各平台使用的主要色)
+    // 遠傳版 
+    .fetnet{
+        .sidebar-item.apply{
+            background-color: $color_orange_FF604A_fetnet; 
+        }
+    }
+    // 台灣大哥大taiwanmobile 
+    .taiwanmobile{
+        .sidebar-item.apply{
+            background-color: $color_orange_FF5F1F_taiwanmobile;
+        } 
+    }
+    // HAPPYGO_happygo 
+    .happygo{
+        .sidebar-item.apply{
+            flex: 0 0 100%;
+            background-color: $color_orange_DE1B2B_happygo;
+        } 
+    }
+    // 貸鼠先生roo
+    .roo{
+        .sidebar-item.apply{
+            background-color: $color_orange_CC3C14_roo;
+        } 
+    }
+    // Money101 
+    .money101{
+        .sidebar-item.apply{
+            background-color: $color_orange_FF8640_money101;
+        } 
+    }
+    // 實貸比較網alphaloan 
+    .alphaloan{
+        .sidebar-item.apply{
+            background-color: $color_orange_FF8640_alphaloan;
+        } 
+    }
+
+
+
+    .sidebar-item br{
+        display: none;
+        @include md{
+            display: block;
+        }
+    }
+    .btn-top{
+        position: absolute;
+        background-color: $color_black_000;
+        border-radius: 50%;
+
+        width: $mobile_26px;
+        height: $mobile_26px;
+        padding: 0 $mobile_2px $mobile_3px;
+        right: $mobile_5px;
+        top: -70%;
+        @include md{
+            width: $desktop_60px;
+            height: $desktop_60px;
+            padding: 0 $desktop_5px $desktop_5px;
+            right: $desktop_20px;
+            top: $desktop_220px;
+        }
+        @include lg{
+            width: 60px;
+            height: 60px;
+            padding: 5px;
+            right: 20px;
+            top: 220px;
+        }
+    }
+    // HAPPYGO_happygo 
+    .happygo .btn-top{
+        @include md{
+            top: $desktop_120px;
+        }
+        @include lg{
+            top: 120px;
+        }
+    }
+
+    .btn-top img{
+        display: block;
+    }
