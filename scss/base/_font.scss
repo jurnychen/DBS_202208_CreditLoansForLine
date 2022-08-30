@@ -425,16 +425,16 @@
 		color: $color_orange_CC3C14_roo; // 貸鼠先生roo
 	}
 
-	.money101 .readmore a,
-	.money101 .kv-title-promote span,
-	.money101 .feature-item-title p,
-	.money101 .feature-item-title span,
-	.money101 .qa-item .qa-mark,
-	.money101 .qa-item dd a span,
-    .money101 .qa-item dt::before,  
-    .money101 .qa-item dd::before,
-    .money101 .readmore a{
-		color: $color_orange_FF8640_money101; // Money101
+	.forline .readmore a,
+	.forline .kv-title-promote span,
+	.forline .feature-item-title p,
+	.forline .feature-item-title span,
+	.forline .qa-item .qa-mark,
+	.forline .qa-item dd a span,
+    .forline .qa-item dt::before,  
+    .forline .qa-item dd::before,
+    .forline .readmore a{
+		color: $color_red_DE1B2B_forline; // forline
 	}
 
 	.alphaloan .readmore a,
